@@ -1,0 +1,339 @@
+@import 'typography';
+@import 'base';
+
+$theme_color: #003399;
+$color_white: #fff;
+$color_black: #000;
+
+.header-area {
+    padding: 4rem 0;
+
+    &__navigation {
+        margin-top: 2rem;
+
+        ul {
+            li {
+                display: inline-block;
+
+                a {
+                    display: block;
+                    padding: 0 2rem;
+                    text-transform: uppercase;
+                    color: $color_black;
+                }
+            }
+        }
+    }
+
+    &__logo {
+
+        display: inline-block;
+    }
+
+    &__focial {
+        margin-top: 1.5rem;
+
+        a {
+            display: inline-block;
+            margin: 0 .5rem;
+            background-color: $theme_color;
+            color: $color_white;
+            width: 4rem;
+            height: 4rem;
+            line-height: 4.5rem;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 2rem
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+slider-area css
+========================================================================== */
+.slider-area {
+    .slider-area__carouse {
+        position: relative;
+    }
+
+    .item,
+    .item>.container,
+    .item>.container>.row,
+    .item>.container>.row>div {
+        height: 100vh
+    }
+
+    .item {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color_white;
+            -webkit-clip-path: polygon(0 75%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 75%, 100% 100%, 100% 100%, 0 100%);
+        }
+    }
+
+    .slider-one-bg-img1 {
+        background-image: url(../images/slider-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .slider-one-bg-img2 {
+        background-image: url(../images/slider-img2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        width: 40%;
+        -webkit-clip-path: polygon(15% 1%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(15% 1%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        z-index: inherit;
+        z-index: 9999;
+
+        font-size: 2rem;
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 0;
+            line-height: 5rem
+        }
+    }
+}
+
+/* ==========================================================================
+promo area css
+========================================================================== */
+
+.promo-area__single {
+    float: left;
+    width: 25%
+}
+
+
+/* ==========================================================================
+homepage-banner-area css
+========================================================================== */
+.homepage-banner-area {
+    background-image: url(../images/home-banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+    margin: 8rem 0;
+}
+
+/* ==========================================================================
+why-hire-us-area css
+========================================================================== */
+.why-hire-us-area {
+    &__title {
+        margin-top: -5rem;
+        margin-bottom: 5rem
+    }
+
+    &__single {
+        text-align: center;
+        width: 50%;
+
+        margin: 0 auto;
+
+        img {
+            margin-bottom: 2rem
+        }
+
+        h2 {
+            margin-bottom: .5rem;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* ==========================================================================
+work-showcase-area css
+========================================================================== */
+.work-showcase-area {
+
+    &__single {
+        height: 50rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__single.one {
+        background-image: url(../images/work-img-1.jpg);
+    }
+
+    &__single.two {
+        background-image: url(../images/work-img-2.jpg);
+    }
+
+    &__single.three {
+        background-image: url(../images/work-img-3.jpg);
+    }
+}
+
+/* ==========================================================================
+footer-area css
+========================================================================== */
+.footer-area {
+    background-color: $theme_color;
+
+    &__single {
+        color: $color_white;
+
+        font-size: 2rem;
+
+        p {
+            margin: 2rem 0 0
+        }
+
+        a {
+            color: $color_white;
+            display: inline-block;
+            margin-left: 1rem;
+        }
+    }
+}
+
+/* ==========================================================================
+Copyright area css
+========================================================================== */
+.hamberger-menu {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    font-size: 30px;
+    display: none;
+
+    &:hover {
+        cursor: pointer
+    }
+
+    i {
+        padding: 10px;
+        color: $theme_color;
+        font-size: 3.5rem;
+        cursor: pointer;
+    }
+}
+
+.mobile-menu__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($theme_color, 1);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: all .3s linear 0;
+    display: none
+}
+
+.mobile-menu__wrap.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+.mobile-menu__header {
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    width: 100%;
+
+    a {
+        padding: 2rem;
+        display: inline-block
+    }
+}
+
+.close-mb-menu {
+    float: right;
+    padding: 10px;
+    font-size: 4rem;
+    margin-top: 12px;
+    margin-right: 15px;
+
+}
+
+.mobile-menu__header img {
+    width: 25rem;
+}
+
+.mobile-menu__footer {
+    position: absolute;
+    bottom: 5rem;
+
+    a {
+        color: #fff;
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+}
+
+nav.mobile ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 5rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+i.fa.fa-times.close-mb-menu {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* ==========================================================================
+Copyright area css
+========================================================================== */
+.copyright-area {
+    padding: 3rem 0;
+    font-size: 1.5rem;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &__dev-link a {
+        text-transform: uppercase;
+        color: $color_black
+    }
+}

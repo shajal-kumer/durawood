@@ -1,0 +1,43 @@
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 100% !important;
+        max-width: 1380px !important;
+
+    }
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+}
+
+.dis-flex {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.dis-flex>div {
+    width: 50%;
+}
+
+.common {
+    padding: 8rem 0px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.desktop-dis-none,
+.mobile-menu__wrap {
+    display: none
+}

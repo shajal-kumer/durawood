@@ -1,0 +1,111 @@
+/* ==========================================================================
+Responaive css
+========================================================================== */
+
+/* width 992-1070 css device */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+    .header-area__focial a {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3.5rem;
+        font-size: 1.5rem
+    }
+
+    .header-area__navigation {
+        margin-top: 1.5rem;
+    }
+
+    .header-area__focial {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        background-color: pink;
+    }
+
+    .slider-area .item:after {
+        -webkit-clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
+    }
+
+    .why-hire-us-area__single {
+        width: auto
+    }
+
+    .work-showcase-area__single {
+        height: 40rem
+    }
+
+    .footer-area__single {
+
+        font-size: 1.7rem;
+    }
+
+    .footer-area__single p {
+        margin: 1.3rem 0 0;
+    }
+
+    .partners-area__single {
+        min-height: 8.5rem;
+        line-height: 8.5rem;
+    }
+
+    .homepage-banner-area {
+        height: 50rem;
+    }
+
+    .common {
+        padding: 3rem 0
+    }
+}
+
+/* width 767 css device */
+@media screen and (max-width: 767px) {
+
+    .mobile-display-none {
+        display: none
+    }
+
+    .hamberger-menu {
+        display: block
+    }
+
+    .promo-area__single {
+        width: auto;
+        float: none
+    }
+
+    .work-showcase-area__single {
+        height: 40rem
+    }
+
+    .homepage-banner-area {
+        height: 50rem;
+    }
+
+    .partners-area__single {
+        min-height: 8.5rem;
+        line-height: 8.5rem;
+        padding: 2rem 0
+    }
+
+    why-hire-us-area__title {
+        margin-top: -8rem;
+    }
+
+    .why-hire-us-area__single {
+        margin-bottom: 3rem
+    }
+
+    .common {
+        padding: 1rem 0
+    }
+
+}
+
+/* width 460-767 css device */
+@media screen and (min-width: 460px) and (max-width: 767px) {}
