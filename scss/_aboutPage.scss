@@ -1,0 +1,49 @@
+/* ==========================================================================
+about page css
+========================================================================== */
+%verticalCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about-area {
+	margin-bottom: 4rem;
+	&__content {
+		padding-right: 10rem;
+		@extend %verticalCenter;
+	}
+}
+.mission-area.common {
+	padding-bottom: 4rem;
+}
+.mission-area__content {
+	padding: 0 10rem;
+	@extend %verticalCenter;
+}
+.process-area {
+	&__title {
+		margin-bottom: 5rem;
+	}
+	&__single {
+		padding-right: 8rem;
+		&-count {
+			font-weight: 500;
+			font-family: 'AvenirLTStd-Medium';
+			margin-bottom: 0;
+		}
+		&-title {
+			font-family: 'AvenirLTStd-Light';
+			position: relative;
+			margin: 4rem 0;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -1rem;
+				height: 4px;
+				width: 8rem;
+				background-color: #3333cc;
+			}
+		}
+	}
+}

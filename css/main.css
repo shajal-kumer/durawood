@@ -2,49 +2,49 @@
     Fonts
 ========================================================================== */
 @font-face {
-  font-family: "AvenirLTStd-Light";
+  font-family: 'AvenirLTStd-Light';
   src: url("../fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Light.otf") format("opentype"), url("../fonts/AvenirLTStd-Light.woff") format("woff"), url("../fonts/AvenirLTStd-Light.ttf") format("truetype"), url("../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Avenir LT Std 95 Black";
+  font-family: 'Avenir LT Std 95 Black';
   font-style: normal;
   font-weight: normal;
   src: local("Avenir LT Std 95 Black"), url("../fonts/AvenirLTStd-Black.woff") format("woff");
 }
 
 @font-face {
-  font-family: "BebasNeueRegular";
+  font-family: 'BebasNeueRegular';
   src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.otf") format("opentype"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg#BebasNeueRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirLTStd-Medium";
+  font-family: 'AvenirLTStd-Medium';
   src: url("../fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Medium.otf") format("opentype"), url("../fonts/AvenirLTStd-Medium.woff") format("woff"), url("../fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "BebasNeueBold";
+  font-family: 'BebasNeueBold';
   src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.otf") format("opentype"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg#BebasNeueBold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "BebasNeue-Thin";
+  font-family: 'BebasNeue-Thin';
   src: url("../fonts/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin.ttf") format("truetype"), url("../fonts/BebasNeue-Thin.svg#BebasNeue-Thin") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat-Black";
+  font-family: 'Montserrat-Black';
   src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -59,7 +59,7 @@ html {
 
 /*=10px*/
 body {
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: 'AvenirLTStd-Light', sans-serif;
   background: #fff;
   line-height: 2.8rem;
   font-size: 1.6rem;
@@ -70,7 +70,8 @@ img {
   max-width: 100%;
 }
 
-button:focus {
+button:focus,
+input:focus {
   outline: none;
 }
 
@@ -88,17 +89,26 @@ a:focus {
 }
 
 h1 {
-  font-family: "BebasNeueBold";
+  font-family: 'BebasNeueBold';
   font-weight: 700;
   margin-top: 0rem;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 4.8rem;
-  font-family: "BebasNeueBold";
+  font-family: 'BebasNeueBold';
   font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-family: 'AvenirLTStd-Medium';
+  font-weight: 600;
   margin-bottom: 3rem;
   margin-top: 0rem;
 }
@@ -148,6 +158,285 @@ ul {
   display: none;
 }
 
+/* ==========================================================================
+story page css
+========================================================================== */
+.story-banner-area-2 img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+}
+
+.our-story-area__title h1 {
+  font-size: 7rem;
+}
+
+.our-story-area__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 6rem;
+}
+
+.why-do-what-do {
+  padding-top: 8rem;
+}
+
+.why-do-what-do p {
+  padding-right: 6rem;
+}
+
+.story-banner-area-2 img {
+  margin-bottom: 10rem;
+}
+
+.story-banner-area-2 p {
+  padding-right: 5rem;
+}
+
+.story-banner-area-2.common {
+  padding-top: 2rem;
+}
+
+/* ==========================================================================
+service page css
+========================================================================== */
+.service-header-banner-area__small-banner {
+  position: absolute;
+  right: 0;
+  bottom: -25rem;
+}
+
+.service-header-banner-area__small-banner img {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.service-header-banner-area.common {
+  padding-top: 0;
+}
+
+.service-area.common {
+  padding: 2rem 0 4rem;
+}
+
+.service-area__title {
+  margin-bottom: 20rem;
+}
+
+.service-area__single {
+  margin-bottom: 5rem;
+  min-height: 13rem;
+  padding-right: 5rem;
+}
+
+.service-area__single h3 {
+  font-size: 2.5rem;
+  font-family: 'AvenirLTStd-Medium';
+  font-weight: 500;
+}
+
+.service-area-banner-two.common {
+  padding: 2rem 0;
+}
+
+.our-promise-area__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 10rem;
+}
+
+/* ==========================================================================
+about page css
+========================================================================== */
+.about-area__content, .mission-area__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-area {
+  margin-bottom: 4rem;
+}
+
+.about-area__content {
+  padding-right: 10rem;
+}
+
+.mission-area.common {
+  padding-bottom: 4rem;
+}
+
+.mission-area__content {
+  padding: 0 10rem;
+}
+
+.process-area__title {
+  margin-bottom: 5rem;
+}
+
+.process-area__single {
+  padding-right: 8rem;
+}
+
+.process-area__single-count {
+  font-weight: 500;
+  font-family: 'AvenirLTStd-Medium';
+  margin-bottom: 0;
+}
+
+.process-area__single-title {
+  font-family: 'AvenirLTStd-Light';
+  position: relative;
+  margin: 4rem 0;
+}
+
+.process-area__single-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  height: 4px;
+  width: 8rem;
+  background-color: #3333cc;
+}
+
+/* ==========================================================================
+work page css
+========================================================================== */
+.work-area__title {
+  margin-bottom: 5rem;
+}
+
+.work-area__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work-area__content h3 {
+  line-height: 4.5rem;
+}
+
+.work-area__carousel.owl-theme .owl-dots {
+  text-align: left;
+  margin-top: 5rem !important;
+}
+
+.work-area__carousel.owl-theme .owl-dots .owl-dot span {
+  width: 70px;
+  border-radius: 0;
+  height: 5px;
+}
+
+/* ==========================================================================
+Contact page css
+========================================================================== */
+.contact-area__contact-us h3, .contact-area__message-form h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.contact-area__contact-us {
+  font-size: 2.5rem;
+}
+
+.contact-area__contact-us address {
+  line-height: 5rem;
+  margin-bottom: 8rem;
+}
+
+.contact-area__contact-us--social {
+  margin-top: 5rem;
+}
+
+.contact-area__contact-us--social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  background-color: #003399;
+  color: #fff;
+  width: 10rem;
+  height: 10rem;
+  line-height: 11rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 6rem;
+}
+
+.contact-area__message-form {
+  width: 70%;
+}
+
+.contact-area__message-form h3 {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.contact-area__message-form input.form-control {
+  height: 6.5rem;
+  border-radius: 0;
+}
+
+.contact-area__message-form .verification {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 1.8rem;
+  height: 6.5rem;
+  margin-right: 7%;
+  width: 46%;
+  text-align: center;
+}
+
+.contact-area__message-form .verification p {
+  margin: 0;
+}
+
+.contact-area__message-form .verification input {
+  width: 4rem;
+  border: none;
+}
+
+.contact-area__message-form .submit-btn {
+  height: 6.5rem;
+  width: 46%;
+  border-radius: 0;
+}
+
+.map-area.common {
+  padding-top: 0;
+}
+
 .header-area {
   padding: 4rem 0;
 }
@@ -177,7 +466,7 @@ ul {
 
 .header-area__focial a {
   display: inline-block;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   background-color: #003399;
   color: #fff;
   width: 4rem;
@@ -297,7 +586,7 @@ why-hire-us-area css
 }
 
 .why-hire-us-area__single h2 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
@@ -390,8 +679,8 @@ Copyright area css
           align-items: center;
   visibility: hidden;
   opacity: 1;
-  -webkit-transition: all .3s linear 0;
-  transition: all .3s linear 0;
+  -webkit-transition: all 0.3s linear 0;
+  transition: all 0.3s linear 0;
   display: none;
 }
 

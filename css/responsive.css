@@ -4,108 +4,236 @@ Responaive css
 
 /* width 992-1070 css device */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+	/* .container {
+		background-color: pink;
+	} */
+	.header-area__focial a {
+		width: 3rem;
+		height: 3rem;
+		line-height: 3.5rem;
+		font-size: 1.5rem;
+	}
 
+	.header-area__navigation {
+		margin-top: 1.5rem;
+	}
 
-    .header-area__focial a {
-        width: 3rem;
-        height: 3rem;
-        line-height: 3.5rem;
-        font-size: 1.5rem
-    }
+	.header-area__focial {
+		margin-top: 1rem;
+	}
 
-    .header-area__navigation {
-        margin-top: 1.5rem;
-    }
-
-    .header-area__focial {
-        margin-top: 1rem;
-    }
+	/* Contact page */
+	.contact-area__message-form {
+		width: 91%;
+	}
+	/* Work page */
+	.work-showcase-area__single {
+		height: 40rem;
+	}
+	/* Service page */
+	.service-header-banner-area__small-banner img {
+		width: 30rem;
+	}
+	.service-header-banner-area__small-banner {
+		bottom: -20rem;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        background-color: pink;
-    }
+	.container {
+		background-color: pink;
+	}
+	.slider-area .item:after {
+		-webkit-clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
+	}
 
-    .slider-area .item:after {
-        -webkit-clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
-    }
+	.why-hire-us-area__single {
+		width: auto;
+	}
 
-    .why-hire-us-area__single {
-        width: auto
-    }
+	.work-showcase-area__single {
+		height: 40rem;
+	}
 
-    .work-showcase-area__single {
-        height: 40rem
-    }
+	.footer-area__single {
+		font-size: 1.7rem;
+	}
 
-    .footer-area__single {
+	.footer-area__single p {
+		margin: 1.3rem 0 0;
+	}
 
-        font-size: 1.7rem;
-    }
+	.partners-area__single {
+		min-height: 8.5rem;
+		line-height: 8.5rem;
+	}
 
-    .footer-area__single p {
-        margin: 1.3rem 0 0;
-    }
+	.homepage-banner-area {
+		height: 50rem;
+	}
 
-    .partners-area__single {
-        min-height: 8.5rem;
-        line-height: 8.5rem;
-    }
+	.common {
+		padding: 3rem 0;
+	}
+	/* Contact page */
+	.contact-area__contact-us {
+		margin-top: 8rem;
+		margin-bottom: 4rem;
+	}
+	/* Story page */
+	.our-story-area__content {
+		margin-bottom: 4rem;
+	}
+	.why-do-what-do {
+		margin-top: 0;
+	}
+	.story-banner-area-2 img {
+		margin-bottom: 5rem;
+	}
+	/* Service page */
+	.service-header-banner-area__small-banner img {
+		width: 20rem;
+	}
+	.service-header-banner-area__small-banner {
+		bottom: -12rem;
+	}
+	.service-area__title {
+		margin-bottom: 6rem;
+	}
+	.service-area__single {
+		margin-bottom: 3rem;
+	}
+	.our-promise-area__img {
+		margin-bottom: 3rem;
+	}
 
-    .homepage-banner-area {
-        height: 50rem;
-    }
+	/* About page */
+	.about-area__content {
+		margin-bottom: 4rem;
+	}
+	.mission-area__content {
+		padding: 0;
+		margin-top: 4rem;
+	}
+	.process-area__single {
+		padding: 0;
+	}
+	.mobile-tab-dis-none {
+		display: none;
+	}
 
-    .common {
-        padding: 3rem 0
-    }
+	.hamberger-menu {
+		display: block;
+	}
 }
 
 /* width 767 css device */
 @media screen and (max-width: 767px) {
+	.promo-area__single {
+		width: auto;
+		float: none;
+	}
+	.mobile-tab-dis-none {
+		display: none;
+	}
+	a.header-area__logo {
+		width: 70%;
+	}
+	.hamberger-menu {
+		display: block;
+		top: 46px;
+	}
+	.work-showcase-area__single {
+		height: 40rem;
+	}
 
-    .mobile-display-none {
-        display: none
-    }
+	.homepage-banner-area {
+		height: 50rem;
+	}
 
-    .hamberger-menu {
-        display: block
-    }
+	.partners-area__single {
+		min-height: 8.5rem;
+		line-height: 8.5rem;
+		padding: 2rem 0;
+	}
 
-    .promo-area__single {
-        width: auto;
-        float: none
-    }
+	.why-hire-us-area__title {
+		margin-top: -8rem;
+	}
 
-    .work-showcase-area__single {
-        height: 40rem
-    }
+	.why-hire-us-area__single {
+		margin-bottom: 3rem;
+	}
 
-    .homepage-banner-area {
-        height: 50rem;
-    }
-
-    .partners-area__single {
-        min-height: 8.5rem;
-        line-height: 8.5rem;
-        padding: 2rem 0
-    }
-
-    why-hire-us-area__title {
-        margin-top: -8rem;
-    }
-
-    .why-hire-us-area__single {
-        margin-bottom: 3rem
-    }
-
-    .common {
-        padding: 1rem 0
-    }
-
+	.common {
+		padding: 1rem 0;
+	}
+	.partners-area .row > div:nth-child(3),
+	.partners-area .row > div:nth-child(4),
+	.partners-area .row > div:nth-child(5),
+	.partners-area .row > div:nth-child(6) {
+		display: none;
+	}
+	.footer-logo {
+		display: none;
+	}
+	.footer-area__single.text-right {
+		text-align: center;
+	}
+	/* about page */
+	.about-area__content {
+		padding: 0;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+	.mission-area__content {
+		padding: 0;
+		margin-top: 2rem;
+	}
+	.process-area__single {
+		padding: 0;
+		margin-bottom: 3rem;
+	}
+	/* Service page */
+	.service-header-banner-area__small-banner {
+		display: none;
+	}
+	.service-area__title {
+		margin-bottom: 4rem;
+	}
+	.service-area__single {
+		margin-bottom: 3rem;
+		min-height: auto;
+	}
+	.service-area__single h3 {
+		margin-bottom: 1rem;
+	}
+	.our-promise-area__content {
+		padding: 0;
+		margin: 3rem 0;
+	}
+	/* Contact page */
+	.contact-area__title,
+	.contact-area__message-form .submit-btn {
+		margin-top: 3rem;
+	}
+	.contact-area__message-form .verification,
+	.contact-area__message-form .submit-btn {
+		width: 100%;
+	}
+	.contact-area__contact-us {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+	.contact-area__contact-us h3 {
+		margin-bottom: 2rem;
+	}
+	.contact-area__contact-us--social {
+		display: none;
+	}
 }
 
 /* width 460-767 css device */
-@media screen and (min-width: 460px) and (max-width: 767px) {}
+@media screen and (min-width: 460px) and (max-width: 767px) {
+}

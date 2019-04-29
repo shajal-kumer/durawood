@@ -1,0 +1,36 @@
+/* ==========================================================================
+story page css
+========================================================================== */
+%imagefit {
+	object-fit: fill;
+	width: 100%;
+}
+.our-story-area {
+	&__title h1 {
+		font-size: 7rem;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 6rem;
+	}
+}
+.why-do-what-do {
+	padding-top: 8rem;
+	p {
+		padding-right: 6rem;
+	}
+}
+.story-banner-area-2 {
+	img {
+		margin-bottom: 10rem;
+		@extend %imagefit;
+	}
+	p {
+		padding-right: 5rem;
+	}
+}
+.story-banner-area-2.common {
+	padding-top: 2rem;
+}
