@@ -1,0 +1,17 @@
+
+/* ==========================================================================
+Copyright area css
+========================================================================== */
+.copyright-area {
+	padding: 3rem 0;
+	font-size: 1.5rem;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	&__dev-link a {
+		text-transform: uppercase;
+		color: $color_black;
+	}
+}

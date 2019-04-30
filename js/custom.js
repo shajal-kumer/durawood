@@ -162,7 +162,7 @@
 			);
 			$('.about-area__content').css(
 				'height',
-				$('.about-area__carousel').outerHeight()
+				$('.about-area__img').height()
 			);
 		}
 		$('.hamberger-menu i').on('click', function() {

@@ -1,14 +1,8 @@
 /* ==========================================================================
 story page css
 ========================================================================== */
-%imagefit {
-	object-fit: fill;
-	width: 100%;
-}
+
 .our-story-area {
-	&__title h1 {
-		font-size: 7rem;
-	}
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -25,7 +19,6 @@ story page css
 .story-banner-area-2 {
 	img {
 		margin-bottom: 10rem;
-		@extend %imagefit;
 	}
 	p {
 		padding-right: 5rem;

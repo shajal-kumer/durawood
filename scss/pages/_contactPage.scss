@@ -1,12 +1,7 @@
 /* ==========================================================================
 Contact page css
 ========================================================================== */
-%font_weight_light {
-	font-weight: 500;
-	font-size: 2.5rem;
-	margin-bottom: 5rem;
-	text-transform: uppercase;
-}
+
 .contact-area {
 	&__contact-us {
 		font-size: 2.5rem;
@@ -14,9 +9,7 @@ Contact page css
 			line-height: 5rem;
 			margin-bottom: 8rem;
 		}
-		h3 {
-			@extend %font_weight_light;
-		}
+
 		&--social {
 			margin-top: 5rem;
 			a {
@@ -35,11 +28,7 @@ Contact page css
 	}
 	&__message-form {
 		width: 70%;
-		h3 {
-			@extend %font_weight_light;
-			margin-bottom: 2rem;
-			margin-top: 3rem;
-		}
+
 		input.form-control {
 			height: 6.5rem;
 			border-radius: 0;

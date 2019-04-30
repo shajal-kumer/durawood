@@ -1,0 +1,50 @@
+/* ==========================================================================
+Base css
+========================================================================== */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'AvenirLTStd-Light', sans-serif;
+	line-height: 2.8rem;
+	font-size: 1.6rem;
+	color: $color_black;
+}
+
+img {
+	max-width: 100%;
+}
+
+button:focus,
+input:focus {
+	outline: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:link,
+a:active,
+a:focus {
+	text-decoration: none !important;
+	margin: 0px;
+	outline: none;
+	transition: 0.8s;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.owl-theme .owl-dots {
+	margin-top: 5rem !important;
+	.owl-dot span {
+		width: 70px;
+		border-radius: 0;
+		height: 5px;
+	}
+}

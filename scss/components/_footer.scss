@@ -1,0 +1,22 @@
+/* ==========================================================================
+footer-area css
+========================================================================== */
+.footer-area {
+	background-color: $theme_color;
+
+	&__single {
+		color: $color_white;
+
+		font-size: 2rem;
+
+		p {
+			margin: 2rem 0 0;
+		}
+
+		a {
+			color: $color_white;
+			display: inline-block;
+			margin-left: 1rem;
+		}
+	}
+}
