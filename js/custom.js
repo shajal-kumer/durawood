@@ -13,7 +13,7 @@
 			animateIn: 'fadeIn',
 			responsiveClass: true,
 			items: 3,
-			dots: false,
+			dots: true,
 			responsive: {
 				0: {
 					items: 1,
@@ -79,7 +79,7 @@
 		// slider-area__carouser end
 
 		if ($(window).width() < 768) {
-			// promo-area carousel start
+			// promo carousel start
 			$('.promo-area').addClass('owl-carousel owl-theme');
 			$('.promo-area').owlCarousel({
 				loop: true,
@@ -109,7 +109,38 @@
 					}
 				}
 			});
-			// slider-area__carouser end
+			// promo area carouser end
+			// promo carousel start
+			$('.service-carousel-on-mobile').addClass('owl-carousel owl-theme');
+			$('.service-carousel-on-mobile').owlCarousel({
+				loop: true,
+				margin: 0,
+				autoplay: true,
+				autoplayTimeout: 4000,
+				autoplayHoverPause: true,
+				autoHeight: true,
+				autoHeightClass: 'owl-height2',
+				animateOut: 'fadeOut',
+				animateIn: 'fadeIn',
+				responsiveClass: true,
+				items: 1,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1,
+						nav: false
+					},
+					767: {
+						items: 1,
+						nav: false
+					},
+					991: {
+						items: 1,
+						nav: false
+					}
+				}
+			});
+			// promo area carouser end
 		}
 
 		if ($(window).width() > 991) {

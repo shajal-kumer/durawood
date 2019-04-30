@@ -4,9 +4,6 @@ Responaive css
 
 /* width 992-1070 css device */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-	/* .container {
-		background-color: pink;
-	} */
 	.header-area__focial a {
 		width: 3rem;
 		height: 3rem;
@@ -40,9 +37,6 @@ Responaive css
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	.container {
-		background-color: pink;
-	}
 	.slider-area .item:after {
 		-webkit-clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
 		clip-path: polygon(0 70%, 100% 93%, 100% 100%, 0% 100%);
@@ -145,11 +139,23 @@ Responaive css
 		top: 46px;
 	}
 	.work-showcase-area__single {
-		height: 40rem;
+		height: 43rem;
 	}
-
+	.promo-area {
+		margin-top: 3rem;
+	}
 	.homepage-banner-area {
 		height: 50rem;
+		margin-top: 3rem;
+	}
+	.slider-area .item,
+	.slider-area .item > .container,
+	.slider-area .item > .container > .row,
+	.slider-area .item > .container > .row > div {
+		height: 50vh;
+	}
+	.slider-one-bg-img2 {
+		display: none;
 	}
 
 	.partners-area__single {
@@ -169,7 +175,12 @@ Responaive css
 	.common {
 		padding: 1rem 0;
 	}
-	.partners-area .row > div:nth-child(3),
+	.homepage-banner-area {
+		height: 20rem;
+	}
+	.why-hire-us-area__title {
+		margin-top: -30px;
+	}
 	.partners-area .row > div:nth-child(4),
 	.partners-area .row > div:nth-child(5),
 	.partners-area .row > div:nth-child(6) {
@@ -180,6 +191,9 @@ Responaive css
 	}
 	.footer-area__single.text-right {
 		text-align: center;
+	}
+	.copyright-area {
+		font-size: 1.1rem;
 	}
 	/* about page */
 	.about-area__content {
@@ -213,7 +227,13 @@ Responaive css
 		padding: 0;
 		margin: 3rem 0;
 	}
+	.service-area.common {
+		padding: 2rem 0 2rem;
+	}
 	/* Contact page */
+	.contact-area__message-form {
+		width: auto;
+	}
 	.contact-area__title,
 	.contact-area__message-form .submit-btn {
 		margin-top: 3rem;
@@ -232,8 +252,59 @@ Responaive css
 	.contact-area__contact-us--social {
 		display: none;
 	}
+	.contact-area__message-form input.form-control,
+	.contact-area__message-form .submit-btn,
+	.contact-area__message-form .verification {
+		height: 5.5rem;
+	}
+	.contact-area__message-form .verification {
+		padding: 1.2rem;
+	}
+	.contact-area__message-form .verification {
+		margin-right: 0;
+	}
+	.contact-area__contact-us {
+		font-size: 2rem;
+	}
+	/* Work page */
+	.work-area__title {
+		margin-bottom: 3rem;
+		margin-top: 2rem;
+	}
+	.work-area__carousel.owl-theme .owl-dots {
+		text-align: left;
+		margin-top: 2rem !important;
+	}
+	.work-area__content h3 {
+		line-height: 3.5rem;
+		font-size: 3rem;
+	}
+	.work-area__content {
+		margin-bottom: 3rem;
+	}
+	/* Story page */
+	.our-story-area__content {
+		padding: 0;
+		margin-bottom: 3rem;
+	}
+	.our-story-area__content h3 {
+		font-size: 3rem;
+	}
+	.why-do-what-do p,
+	.story-banner-area-2 p {
+		padding-right: 0;
+	}
+	.story-banner-area-2 img {
+		margin-bottom: 4rem;
+	}
+	.why-do-what-do {
+		padding-top: 5rem;
+	}
 }
 
 /* width 460-767 css device */
 @media screen and (min-width: 460px) and (max-width: 767px) {
+	.copyright-area {
+		font-size: 1.5rem;
+	}
 }
